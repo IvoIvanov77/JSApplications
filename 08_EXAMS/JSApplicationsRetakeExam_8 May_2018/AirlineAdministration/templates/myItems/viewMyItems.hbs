@@ -1,0 +1,8 @@
+<section id="viewMyFlights">
+    <h3>Your Flights</h3>
+    {{# each myFlights}}
+        {{> singleFlight}}
+    {{else}}
+        <h2>No flights</h2>
+    {{/each}}
+</section>

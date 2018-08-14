@@ -1,0 +1,13 @@
+<tr id={{_id}}>
+    <td>{{title}}</td>
+    <td>{{author}}</td>
+    <td>{{description}}</td>
+    <td>{{price}}</td>
+    <td>{{date}}</td>
+    {{#if isAuthor}}
+        <td>
+            <a href="#/delete/{{_id}}" >[Delete]</a>
+            <a href="#/edit/{{_id}}">[Edit]</a>
+        </td>
+    {{/if}}
+</tr>

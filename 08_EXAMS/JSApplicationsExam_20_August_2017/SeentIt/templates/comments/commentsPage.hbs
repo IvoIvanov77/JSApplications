@@ -1,0 +1,12 @@
+<section id="viewComments">
+    {{> singlePost}}
+    <div class="post post-content">
+        {{> addCommentForm}}
+    </div>
+
+    {{# each comments}}
+        {{> singleComment}}
+    {{else}}
+        {{> noComments}}
+    {{/each}}
+</section>

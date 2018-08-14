@@ -1,0 +1,9 @@
+<section id="viewCatalog">
+    <div class="posts">
+        {{# each allPosts}}
+            {{> singlePost}}
+        {{else}}
+            {{> noPosts}}
+        {{/each}}
+    </div>
+</section>

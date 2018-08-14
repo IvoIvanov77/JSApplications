@@ -1,0 +1,28 @@
+<section id="viewFeed">
+    <div class="content">
+        <div class="chirper">
+
+            <h2 class="titlebar">{{username}}</h2>
+            {{#if isMyProfile}}
+                {{> createForm}}
+            {{else}}
+                {{#if following}}
+                    <a id="btnUnfollow" class="chirp-author" href="#/unfollow/{{username}}">Unfollow</a>
+                {{else}}
+                    <a id="btnFollow" class="chirp-author" href="#/follow/{{username}}">Follow</a>
+                {{/if}}
+
+            {{/if}}
+
+            {{> userStats}}
+        </div>
+        <div id="chirps" class="chirps"><h2 class="titlebar">Chirps</h2>
+            {{# each chirps}}
+                {{> singleChirp}}
+            {{else}}
+                No chirps in database
+            {{/each}}
+        </div>
+    </div>
+</section>
+
