@@ -17,5 +17,6 @@ SoftUni JavaScript Applications course, part of JS Core Module
   - Routing with Sammy.js
   - JS tools and libraries 
  ## Certificate:
+ ![57314](https://user-images.githubusercontent.com/16088420/44700292-0a9f6c00-aa91-11e8-831f-d90f154c17ab.jpg)
 
 
